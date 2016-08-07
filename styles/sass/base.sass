@@ -1,0 +1,514 @@
+/*------ Import other sass files ------*/
+@import 'mixins.sass'
+@import 'vars.sass'
+
+/*------ Import fonts ------*/
+
+@font-face
+	src: url('../../fonts/Lato/Lato-Thin.ttf') format('truetype')
+	font-family: 'Lato-Thin'
+
+@font-face
+	src: url('../../fonts/Lato/Lato-Light.ttf') format('truetype')
+	font-family: 'Lato-Light'
+
+@font-face
+	src: url('../../fonts/Lato/Lato-Regular.ttf') format('truetype')
+	font-family: 'Lato-Regular'
+
+@font-face
+	src: url('../../fonts/Lato/Lato-Medium.ttf') format('truetype')
+	font-family: 'Lato-Medium'
+
+@font-face
+	src: url('../../fonts/Lato/Lato-Semibold.ttf') format('truetype')
+	font-family: 'Lato-Semibold'
+
+@font-face
+	src: url('../../fonts/Raleway/Raleway-ExtraBold.ttf') format('truetype')
+	font-family: 'Raleway-ExtraBold'
+
+@font-face
+	src: url('../../fonts/Raleway/Raleway-Bold.ttf') format('truetype')
+	font-family: 'Raleway-Bold'
+
+/*------ Universal classes ------*/
+
+.float-left
+	float: left
+
+.float-right
+	float: right
+
+.clearfix:before,
+.clearfix:after
+	content: " "
+	display: table
+
+.clearfix:after
+	clear: both
+
+.line
+	width: 100px
+	height: 0
+	border: 0
+	border-bottom: 1px solid $dark
+
+.ul-reset
+	list-style-type: none
+	padding: 0
+	margin: 0
+	*zoom: 1
+
+/*------ jQuery rotate class ------*/
+
+.rotate
+	transform: rotate(90deg)
+	+transition(all ease-in-out .118s)
+
+/*------ Article headings style ------*/
+
+.art-headings
+	font:
+		size: 35px
+		family: 'Raleway-Bold'
+	text-transform: uppercase
+	color: $dark
+
+/*------ Text selection style ------*/
+
+::selection
+	background-color: $light-blue
+
+/*------ Grid system ------*/
+
+.grid
+	width: 1200px
+	margin: 0 auto
+
+/*------ Reset body styles ------*/
+
+body
+	padding: 0
+	margin: 0
+	font-family: 'Lato-Regular', sans-serif
+	font-size: .95em
+	+box-sizing(border-box)
+
+/*------ Header container ------*/
+
+.header-cont
+	+section-reset()
+	background:
+		image: url('../../img/Elegant-background.jpg')
+		repeat: no-repeat
+		position: center
+		size: cover
+	
+	.nav-cont
+		width: 100%
+		height: auto
+
+		.logo
+			
+			.logo-heading
+				color: #fff
+				text-transform: uppercase
+				font-family: 'Lato-Medium', sans-serif
+				font-size: 23px
+
+				.logo-e
+					color: $light-blue
+					height: 100px
+					line-height: 100px
+
+		.nav
+			@extend .ul-reset
+			line-height: 100px
+
+			.nav-items
+				position: relative
+				display: none
+
+			.nav-links
+				color: #fff
+				font:
+					weight: normal
+					size: 14px
+					family: 'Lato-Medium'
+				text:
+					transform: uppercase
+					decoration: none
+				display: inline-block
+				margin: 0 20px 
+
+				&:hover
+					color: $light-blue
+
+			#menu-bar
+				font-size: 20px 
+
+	.wrapper-cont
+		padding: 150px 0
+		width: 600px
+		text-align: center
+		margin: 0 auto
+
+		.wrapper
+			
+
+			.wrapper-heading
+				font:
+					size: 48px
+					family: 'Raleway-ExtraBold'
+				text:
+					transform: uppercase
+					shadow: 1px 1px 2px #333
+				color: #fff
+				display: block
+				margin-bottom: 40px
+
+			& p
+				color: #fff
+				margin-top: 40px
+				font:
+					size: 22px
+					family: 'Lato-Regular'
+
+			.line
+				border-bottom: 1px solid #fff
+
+	.scroll-bottom-cont
+		width: 50px
+		height: auto
+		margin: 0 auto
+
+		.scroll-to-bottom
+			color: #808c92
+			display: inline-block
+			padding: 10px 16px
+			margin-bottom: 50px
+			border: 1px solid #808c92
+			font-size: 25px
+			+border-radius(50%)
+
+/*------ About us container ------*/
+
+.about-cont
+	+section-reset()
+	background-color: #fff
+
+	.about
+		padding: 100px 0
+
+		.about-art-cont
+			width: 770px
+			margin: 0 auto
+			text-align: center
+
+			& p
+				font:
+					size: 22px
+					family: 'Lato-Regular'
+				color: $dark
+
+/*------ Dolore magna container ------*/
+
+.dolore-magna-cont
+	+section-reset()
+	background:
+		color: #fff
+		image: url('../../img/Elegant-section_3.jpg')
+		position: center
+		size: cover
+		repeat: no-repeat
+
+	.dolore-magna
+		position: relative
+
+		.dolore-magna-art-cont
+			padding: 120px 0 70px 0
+			width: 60%
+
+			.dolore-magna-art
+				width: 70%
+
+				.dolore-heading
+					color: #fff
+					font:
+						size: 45px
+						family: 'Lato-Light'
+					text:
+						transform: uppercase
+
+				& p
+					color: #fff
+					font:
+						size: 22px
+						family: 'Lato-Thin'
+					margin-top: -35px
+
+			.more-cont
+				width: 50px
+				height: 50px
+				padding-top: 50px
+
+				.more-link
+					color: #fff
+
+			.iphone-img
+				position: absolute
+				bottom: 0
+				right: 200px
+
+/*------ Our work container ------*/
+
+.our-work-cont
+	+section-reset()
+	background-color: #fff
+
+	.our-work
+
+		.heading-cont
+			text-align: center
+
+
+		.our-work-nav-cont
+
+			.our-work-nav
+				@extend .ul-reset
+				text-align: center
+
+				.our-work-nav-items
+					display: inline-block
+
+					.our-work-nav-links
+						text:
+							decoration: none
+							transform: uppercase
+						font:
+							weight: normal
+							size: 19px
+							family: 'Lato-Regular'
+						color: $grey
+						display: inline-block
+						margin: 50px 20px
+
+					.active,
+						color: $dark
+
+		.our-work-projects-cont
+			width: 100%
+			display: block
+			
+			.our-work-projects-row
+
+				.our-work-projects-nav
+					@extend .ul-reset
+					text-align: center
+
+					.our-work-projects-items
+						display: inline-block
+						width: 300px
+						height: 350px
+						margin: 10px 10px
+
+						.our-work-projects-links
+
+							& img
+								width: 100%
+								height: 100%
+
+		.our-work-more-link-cont
+			width: 100%
+			display: block
+			text-align: center
+			margin: 80px 0
+
+			.our-work-more-link
+				display: inline
+				padding: 10px 100px
+				border: 2px solid $dark
+				background-color: #fff
+				color: $dark
+				text:
+					decoration: none
+					transform: uppercase
+				font:
+					size: 24px
+					family: 'Lato-Regular'
+
+/*------ Our clients container ------*/
+
+.our-clients-cont
+	+section-reset()
+	background-color: #f4f4f4
+
+	.our-clients-heading
+		text-align: center
+
+	.clients-nav
+		@extend .ul-reset
+		text-align: center
+
+		.clients-items
+			display: inline-block
+			margin: 5%
+
+			& object
+				width: 100px
+				height: auto
+				+filter(grayscale(100%))
+				// -ms-filter: 'progid.DXImageTransform.Microsoft.Grayscale(1)'
+				// filter: gray
+
+				&:hover
+					+filter(none)
+
+/*------ John Doe container ------*/
+
+.john-doe-cont
+	+section-reset()
+	background:
+		color: #fff
+		image: url('../../img/Elegant_bay_bridge.jpg')
+		position: center
+		size: cover
+		repeat: no-repeat
+
+	.john-doe
+		padding: 60px 0 40px 0
+
+
+		.john-doe-cont-art
+			text-align: center
+
+			& p
+				font:
+					weight: normal
+					size: 35px
+					family: 'Lato-Thin'
+				color: #fff
+
+				&:before,
+				&:after
+					content: "\""
+
+		.author
+			color: #fff
+			font:
+				weight: bold
+				size: 21px
+				family: 'Raleway-Bold'
+
+			&:before
+				content: " - "
+
+/*------ Service contaier ------*/
+
+.service-cont
+	+section-reset()
+	background: #fff
+
+	.service-heading
+		text-align: center
+
+	.service-elements-cont
+		width: 100%
+		text-align: center
+		padding: 80px 0 120px 0
+
+		.service-elements
+			display: inline-block
+			width: 25%
+			text-align: center
+			margin: 0 30px
+
+			.service-headings
+				font:
+					size: 21px
+					family: 'Lato-Regular'
+
+			.service-font
+
+				& i
+					font-size: 130px
+					height: auto
+					color: $blue
+
+/*------ Number container ------*/
+
+.number-cont
+	+section-reset()
+	background:
+		image: url('../../img/Elegant-section_3.jpg')
+		position: center
+		size: cover
+		repeat: no-repeat
+
+	.number-elements-cont
+		padding: 100px 0
+		text-align: center
+
+		.number-elements
+			display: inline-block
+			width: 17%
+			color: #fff
+
+			.numbers
+				font:
+					size: 60px
+					family: 'Lato-Thin'
+
+			.number-stuff
+				font:
+					size: 24px
+					family: 'Lato-Semibold'
+
+/*------ Skills container ------*/
+
+.skills-cont
+	+section-reset()
+
+	.skills-heading
+		text-align: center
+
+	.main-skills-cont
+		padding: 100px 0
+
+		.skills-sidebar-cont, .progress-bars-cont
+			display: inline-block
+			width: 40%
+		
+		.progress-bars-cont
+
+			.prog-bar-headings
+				font:
+					size: 13.45px
+					family: 'Lato-Semibold'
+				color: #a0a0a0
+				text-transform: uppercase
+
+			.photoshop, .illustrator, .html, .css, .javascript
+
+				.photo-prog-bar-cont
+					width: 100%
+					height: 15px
+					border-radius: 5px
+					background: #eee
+					margin: 10px 0
+
+					.photo-prog-bar
+						width: 95%
+						height: 15px
+						border-radius: 5px
+						background: $blue
+
+/*------ Footer container ------*/
+
+.footer-cont
+	+section-reset()
+	background:
+		image: url('../../Elegant_footer_img.jpg')
+		position: center
+		size: cover

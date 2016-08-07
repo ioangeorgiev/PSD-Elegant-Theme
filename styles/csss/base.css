@@ -1,0 +1,211 @@
+/*------ Import other sass files ------ */
+/*------ Set border radius on the element ------ */
+/*------ Variables ------ */
+/*------ Import fonts ------ */
+@font-face {
+  src: url("../../fonts/Lato/Lato-Thin.ttf") format("truetype");
+  font-family: "Lato-Thin"; }
+@font-face {
+  src: url("../../fonts/Lato/Lato-Light.ttf") format("truetype");
+  font-family: "Lato-Light"; }
+@font-face {
+  src: url("../../fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-family: "Lato-Regular"; }
+@font-face {
+  src: url("../../fonts/Lato/Lato-Medium.ttf") format("truetype");
+  font-family: "Lato-Medium"; }
+@font-face {
+  src: url("../../fonts/Raleway/Raleway-ExtraBold.ttf") format("truetype");
+  font-family: "Raleway-ExtraBold"; }
+@font-face {
+  src: url("../../fonts/Raleway/Raleway-Bold.ttf") format("truetype");
+  font-family: "Raleway-Bold"; }
+/*------ Universal classes ------ */
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.line {
+  width: 15%;
+  height: 0;
+  border: 0;
+  border-bottom: 1px solid #222; }
+
+/*------ jQuery totate class ------ */
+.rotate {
+  transform: rotate(90deg);
+  -webkit-transition: all ease-in-out 0.118s;
+  -moz-transition: all ease-in-out 0.118s;
+  transition: all ease-in-out 0.118s; }
+
+/*------ Article headings style ------ */
+.art-headings {
+  font-size: 35px;
+  font-family: "Raleway-Bold";
+  text-transform: uppercase;
+  color: #222; }
+
+/*------ Text selection style ------ */
+::selection {
+  background-color: #07a9f4; }
+
+/*------ Grid system ------ */
+.grid {
+  width: 1200px;
+  margin: 0 auto; }
+
+/*------ Reset body styles ------ */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 0.95em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*------ Header container ------ */
+.header-cont {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-image: url("../../img/Elegant-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .header-cont .nav-cont {
+    width: 100%;
+    height: auto; }
+    .header-cont .nav-cont .logo .logo-heading {
+      color: #fff;
+      text-transform: uppercase;
+      font-family: "Lato-Medium", sans-serif;
+      font-size: 23px; }
+      .header-cont .nav-cont .logo .logo-heading .logo-e {
+        color: #07a9f4;
+        height: 100px;
+        line-height: 100px; }
+    .header-cont .nav-cont .nav {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      line-height: 100px; }
+      .header-cont .nav-cont .nav .nav-items {
+        position: relative;
+        display: none; }
+      .header-cont .nav-cont .nav .nav-links {
+        color: #fff;
+        font-weight: normal;
+        font-size: 14px;
+        font-family: "Lato-Medium";
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 20px; }
+        .header-cont .nav-cont .nav .nav-links:hover {
+          color: #07a9f4; }
+      .header-cont .nav-cont .nav #menu-bar {
+        font-size: 20px; }
+  .header-cont .wrapper-cont {
+    padding: 150px 0;
+    width: 600px;
+    text-align: center;
+    margin: 0 auto; }
+    .header-cont .wrapper-cont .wrapper .wrapper-heading {
+      font-size: 48px;
+      font-family: "Raleway-ExtraBold";
+      text-transform: uppercase;
+      text-shadow: 1px 1px 2px #333;
+      color: #fff;
+      display: block;
+      margin-bottom: 40px; }
+    .header-cont .wrapper-cont .wrapper p {
+      color: #fff;
+      margin-top: 40px;
+      font-size: 22px;
+      font-family: "Lato-Regular"; }
+    .header-cont .wrapper-cont .wrapper .line {
+      border-bottom: 1px solid #fff; }
+  .header-cont .scroll-bottom-cont {
+    width: 50px;
+    height: auto;
+    margin: 0 auto; }
+    .header-cont .scroll-bottom-cont .scroll-to-bottom {
+      color: #808c92;
+      display: inline-block;
+      padding: 10px 16px;
+      margin-bottom: 50px;
+      border: 1px solid #808c92;
+      font-size: 25px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%; }
+
+/*------ About us container ------ */
+.about-cont {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: #fff; }
+  .about-cont .about {
+    padding: 100px 0; }
+    .about-cont .about .about-art-cont {
+      width: 770px;
+      margin: 0 auto;
+      text-align: center; }
+      .about-cont .about .about-art-cont p {
+        font-size: 22px;
+        font-family: "Lato-Regular";
+        color: #222; }
+
+/*------ Dolore magna container ------ */
+.dolore-magna-cont {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: #fff;
+  background-image: url("../../img/Elegant-section_3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .dolore-magna-cont .dolore-magna {
+    position: relative; }
+    .dolore-magna-cont .dolore-magna .dolore-magna-art-cont {
+      padding: 120px 0 70px 0;
+      width: 60%; }
+      .dolore-magna-cont .dolore-magna .dolore-magna-art-cont .dolore-magna-art {
+        width: 70%; }
+        .dolore-magna-cont .dolore-magna .dolore-magna-art-cont .dolore-magna-art .dolore-heading {
+          color: #fff;
+          font-size: 45px;
+          font-family: "Lato-Light";
+          text-transform: uppercase; }
+        .dolore-magna-cont .dolore-magna .dolore-magna-art-cont .dolore-magna-art p {
+          color: #fff;
+          font-size: 22px;
+          font-family: "Lato-Thin";
+          margin-top: -35px; }
+      .dolore-magna-cont .dolore-magna .dolore-magna-art-cont .more-cont {
+        width: 50px;
+        height: 50px;
+        padding-top: 50px; }
+        .dolore-magna-cont .dolore-magna .dolore-magna-art-cont .more-cont .more-link {
+          color: #fff; }
+      .dolore-magna-cont .dolore-magna .dolore-magna-art-cont .iphone-img {
+        position: absolute;
+        bottom: 0;
+        right: 200px; }
+
+/*------ Our work container ------ */
+
+/*# sourceMappingURL=base.css.map */
