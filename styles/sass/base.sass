@@ -509,6 +509,102 @@ body
 .footer-cont
 	+section-reset()
 	background:
-		image: url('../../Elegant_footer_img.jpg')
+		image: url('../../img/Elegant_footer_img.jpg')
 		position: center
 		size: cover
+		repeat: no-repeat
+	text-align: center
+
+	.footer-heading
+		width: 40%
+		margin: 0 auto
+		text-align: center
+
+		& h3
+			color: #fff
+
+		& hr
+			border-color: #fff
+
+	.foot-social-nav-cont
+
+		.foot-social-nav
+			list-style-type: none
+			text-align: center
+			display: inline-block
+			padding: 0
+			margin: 0
+
+			.foot-social-nav-items
+				float: left
+				margin: 65px 10px
+
+				.foot-social-nav-links
+					color: #fff
+					font-size: 18px
+
+					&:hover
+						color: $blue
+
+	& form
+		width: 90%
+		height: auto
+		margin: 0 auto
+		margin-bottom: 120px
+		text-align: center
+
+		& input[type="text"]
+			margin-right: 10px
+
+		& input[type="email"]
+			margin-left: 10px
+
+		& input[type="text"], input[type="email"]
+			width: 295px
+			height: 50px
+			padding-left: 10px
+			outline: 0
+			border: none
+			border-bottom: 1px solid $input-border
+			background: transparent
+			color: #fff
+
+			&::-webkit-input-placeholder
+				color: $input-border
+				font-style: italic
+
+		& textarea
+			width: 625px
+			height: 40px
+			padding-left: 10px
+			margin-top: 70px
+			outline: 0
+			border: none
+			border-bottom: 1px solid $input-border
+			background: transparent
+			color: #fff
+			resize: none
+
+			&::-webkit-input-placeholder
+				color: $input-border
+				font:
+					style: italic
+					family: 'Lato', sans-serif
+
+		.send-btn
+			width: 150px
+			height: 45px
+			display: inline-block
+			margin-top: 40px
+			border: 2px solid #fff
+			color: #fff
+			background: transparent
+			text-transform: uppercase
+			outline: 0
+			cursor: pointer
+			+transition(all ease-in-out .120s)
+
+			&:hover
+				background: #fff
+				color: $blue
+				+transition(all ease-in-out .120s)
